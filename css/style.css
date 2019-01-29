@@ -1,0 +1,221 @@
+/* GENERAL */
+
+html, body {
+   
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;
+    height: 1500px;  /*work setting*/
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/galaxys7.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+.header .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .container .row .social-networks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+}
+.header .container .row .headline{
+    width: 25%;
+    min-height: 20%;
+    display: inline-block;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+    color: #010066;
+}
+.header .container .row .headline h1{
+    font-style: italic;
+}
+
+.header .container .row .headline .btn{
+    width: 60%;
+    color: #010066;
+    padding: 10px;
+    border: 2px solid #010066;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.header .container .row .headline .btn:hover{
+    color: white;
+    background-color: #010066;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+
+/* ABOUT US */
+.about{
+    min-height: 90vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-shadow: 4px 2px 6px black;
+}
+.about .container{
+    display: flex;
+    position: absolute;
+    top: 5%;
+}
+.about .container .row{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ABOUT US ./*/
+
+
+/* SPECIFICATION */
+.specification .container{
+    width: 100%;
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.specification .container .row{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    margin-top: 5%;
+}
+.specification .container .row p{
+    border: 2px solid white;
+    padding: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #010066;
+    border-radius: 6px;
+}
+/* SPECIFICATION ./*/
+
+/* OTHER PRODUCTS */
+.products{
+    min-height: 100vh;
+}
+.products .container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.products .container .row h1{
+     
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #010066;
+        padding-bottom: 20px;
+        border-bottom: 3px solid;
+    
+}
+.products .container .row .thumbnails{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.products .container .row .thumbnails .thumb{
+    width: 20%;
+}
+.products .container .row .thumbnails .thumb img{
+    width: 100%;
+}
+.products .container .row .thumbnails .thumb h3{
+    text-align: center;
+}
+/* OTHER PRODUCTS ./*/
+/* FOOTER */
+.footer .container{
+    align-items: center;
+    background-color: #010066;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .container .map{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* FOOTER ./*/
+
+
+/* MEDIA QUERY */
+/* Large divice - lg */
+@media screen and (min-width: 1200px) {
+    .specification .container .row {
+        margin-top: 3%;
+    }
+}
+/* medium divice - md */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .header .container .row .headline .btn{
+        width: 100%;
+    }
+    .about{
+         background-position: center; 
+    }
+    .specification .container .row {
+        margin-top: 3%;
+    }
+}
+/* extra small divice - xs */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    
+    .header .container .row .headline{
+        width: 80%;
+        position: absolute;
+        bottom: 5%;
+        color: black;
+    }
+    .about{
+        background-position: center; 
+   }
+   .products .container .row .thumbnails{
+       width: 100%;
+       display: block;
+   }
+   .products .container .row .thumbnails .thumb{
+        width: 100%;
+   }
+   .footer .container{
+        display: grid;
+        padding-top: 20px;
+   }
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  
+    .specification .container .row{
+        width: 80%;
+    }
+    
+}
